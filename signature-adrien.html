@@ -4,12 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Signature</title>
+    <style>
+      @media screen and (max-width: 480px) {
+        .mobile-block {
+          display: block !important;
+          width: 100% !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .logo-container {
+          text-align: center !important;
+          margin-top: 15px !important;
+          padding-right: 0 !important;
+          width: 100% !important;
+        }
+        .logo-image {
+          margin: 0 auto !important;
+          display: block !important;
+        }
+      }
+    </style>
   </head>
   <body style="font-family: Helvetica, sans-serif; margin: 0; padding: 0">
     <div
       style="
-        max-width: 500px;
-        padding: 20px 30px 20px 0px;
+        max-width: 400px;
+        padding: 10px 20px 10px 0px;
         font-size: 14px;
         line-height: 1.4;
         color: #0b0bca;
@@ -24,25 +45,32 @@
         cellspacing="0"
       >
         <tr>
-          <td style="vertical-align: middle">
+          <td
+            class="mobile-block"
+            style="vertical-align: middle; width: 100px; text-align: center"
+          >
             <!-- Replace with your profile image -->
             <img
               src="https://www.cascadestudio.fr/imgs/email-signature/adrien-portrait-blue.png"
               alt="Profile Photo"
               style="
-                width: 140px;
-                height: 140px;
+                margin-right: 5px;
+                width: 100px;
+                height: 100px;
                 border-radius: 50%;
                 object-fit: cover;
               "
             />
           </td>
-          <td style="vertical-align: middle; padding-right: 20px">
+          <td
+            class="mobile-block mobile-center"
+            style="vertical-align: middle; padding-right: 20px"
+          >
             <!-- Replace with your information -->
-            <div style="font-size: 14px; font-weight: bold">
+            <div style="font-size: 12px; font-weight: bold">
               Adrien Lapasset
             </div>
-            <div style="font-size: 14px; margin-bottom: 8px">Co-fondateur</div>
+            <div style="font-size: 12px; margin-bottom: 8px">Co-fondateur</div>
 
             <div style="font-size: 12px">
               <a
@@ -85,9 +113,13 @@
               </a>
             </div>
           </td>
-          <td style="vertical-align: middle; max-width: 200px; height: auto">
+          <td
+            class="mobile-block logo-container"
+            style="vertical-align: middle; height: auto; text-align: right"
+          >
             <img
-              style="width: 200px"
+              class="logo-image"
+              style="width: 150px"
               src="https://www.cascadestudio.fr/imgs/email-signature/cascade-logo.png"
               alt="Logo"
             />
